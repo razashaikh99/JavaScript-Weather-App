@@ -1,0 +1,161 @@
+* {
+    color: azure;
+}
+
+body {
+    background: rgb(110, 69, 60);
+    background: radial-gradient(circle, rgb(73, 59, 55) 0%, rgba(0, 0, 0, 1) 38%);
+    color: azure !important;
+
+
+
+
+}
+
+.main {
+    margin: auto;
+    margin-top: 50px;
+    background-image: url(pic/download.jfif);
+    width: 300px;
+    height: 520px;
+    border-radius: 30px;
+    /* border: #ffff00 1px solid; */
+
+}
+
+.contant {
+    display: flex;
+    align-items: center;
+}
+
+.search-button {
+    border-radius: 15px;
+    border-color: rgb(207 179 148);
+    outline: rgb(207 179 148);
+    height: 30px;
+    margin-top: 5px;
+    background: rgb(207 179 148);
+
+
+}
+
+.search {
+    text-align: center;
+}
+
+.weather {
+    text-align: center;
+    width: 50%;
+    text-align: start;
+    font-size: x-large;
+
+}
+
+.type {
+    text-align: center;
+}
+
+.column {
+
+    width: 60%;
+
+}
+
+
+
+
+.weather-image {
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+
+.forcast-figure {
+    margin-left: 14%;
+    margin-top: 10px;
+}
+
+.forcast {
+    display: flex;
+    background: rgb(83, 88, 37);
+    background: linear-gradient(128deg, rgba(83, 88, 37, 1) 5%, rgba(115, 98, 86, 1) 27%);
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 30px;
+    margin-top: 7px;
+}
+
+.search-btn {
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+    background-color: #ffff00;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.input-container {
+    position: relative;
+    margin: 20px auto;
+    width: 200px;
+}
+
+.input-container input[type="text"] {
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid azure !important;
+    padding: 20px 0px 0px 0px;
+    background-color: transparent;
+    outline: none;
+}
+
+.input-container .label {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    color: azure !important;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.input-container input[type="text"]:focus~.label,
+.input-container input[type="text"]:valid~.label {
+    top: -5px;
+    font-size: 16px;
+    color: azure !important;
+}
+
+.input-container .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #ffff00;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+}
+
+.input-container input[type="text"]:focus~.underline,
+.input-container input[type="text"]:valid~.underline {
+    transform: scaleX(1);
+}
